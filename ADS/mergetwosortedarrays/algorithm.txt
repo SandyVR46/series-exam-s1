@@ -1,0 +1,8 @@
+ALGORITHM
+Step 1:  Declare two arrays and arr2 and read the elements
+Step 2:  Traverse both arrays
+Step 3:  Find the minimum element among the current two elements of both the arrays and update  	the merge array with the least value and increment its index to next position.
+Step 4:  Repeat procedure until both arrays are exhausted and return merge array.
+Step 5:  Stop
+
+

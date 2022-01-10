@@ -1,0 +1,37 @@
+Algorithm to insert an element in a circular queue
+
+Step 1: IF (REAR+1)%MAX = FRONT
+Write " OVERFLOW "
+Goto step 4
+[End OF IF]
+
+Step 2: IF FRONT = -1 and REAR = -1
+SET FRONT = REAR = 0
+ELSE IF REAR = MAX - 1 and FRONT ! = 0
+SET REAR = 0
+ELSE
+SET REAR = (REAR + 1) % MAX
+[END OF IF]
+
+Step 3: SET QUEUE[REAR] = VAL
+Step 4: EXIT
+
+Algorithm to delete an element from the circular queue
+
+Step 1: IF FRONT = -1
+Write " UNDERFLOW "
+Goto Step 4
+[END of IF]
+
+Step 2: SET VAL = QUEUE[FRONT]
+Step 3: IF FRONT = REAR
+SET FRONT = REAR = -1
+ELSE
+IF FRONT = MAX -1
+SET FRONT = 0
+ELSE
+SET FRONT = FRONT + 1
+[END of IF]
+[END OF IF]
+
+Step 4: EXIT

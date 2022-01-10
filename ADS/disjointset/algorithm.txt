@@ -1,0 +1,19 @@
+Algorithm
+
+MAKE _SET(x)
+	p(x)=x
+	rank(x)=0
+UNION(x, y)
+	LINK(FIND_SET(x)), FIND_SET(y))
+
+LINK(x,y)
+	if rank[x]>rank[y]
+		then p[y]=x
+		else p[x]=y
+			if rank[x]=rank[y]
+			then rank[y]++
+
+FIND_SET(x)
+	if x != p[x]
+		then p[x]=FIND_SET (p[x])
+	return p[x]

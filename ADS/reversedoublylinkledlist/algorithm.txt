@@ -1,0 +1,16 @@
+Algorithm to reverse a doubly linked list
+ Input : head {Pointer to first node of the list}
+         last {Pointer to last node of the list}
+Begin:
+    current ← head;
+    While (current != NULL) do
+        temp ← current.next;
+        current.next ← current.prev;
+        current.prev ← temp;
+        
+        current ← temp;
+    End while
+    temp ← head;
+    head ← last;
+    last ← temp;
+End

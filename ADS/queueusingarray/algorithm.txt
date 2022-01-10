@@ -1,0 +1,34 @@
+ALGORITHM
+
+Step 1 - Include all the header files which are used in the program and define a constant 'SIZE' with 	 specific value.
+Step 2 -  Declare all the user defined functions which are used in queue implementation.
+Step 3 - Then implement main method by displaying menu of operations list and make suitable 	       	 function calls to perform operation selected by the user on queue.
+
+INSERT
+
+Step 1 -  Check whether queue is FULL. If it is FULL, then display "Overflow" and exit.
+Step 2 -  If it is NOT FULL, check if its front and rear=-1, if its true then increment rear value by one 	  (rear++)
+Step 3 -   Add data element to the queue location q[rear]=item.
+
+DELETE
+
+Step 1 - Check whether queue is EMPTY. (front == rear). If it is EMPTY, then display "Underflow" and 	terminate the function.
+Step 2 - If the queue is not empty, access the data where front is pointing item=q[front]. Then check 	front==rear, if its true front=rear=-1.
+Step 3- Otherwise increment front(front++) pointer to point pointer to point next available data element.
+
+DISPLAY
+
+Step 1 - Check if the queue is empty. If the queue is empty, print “Empty Queue” and exit.
+Step 2 - If it’s not empty then define a variable ‘i’ and initialize with front. Display q[i] value and increment i value by one(i++).
+Step 3 - Repeat above step until i<=rear.
+
+FRONT ELEMENT
+
+Step 1: Declare item to store front element
+Step 2: If it is EMPTY, then display “Empty Queue” and terminate the function.
+Step 3:  If it is not EMPTY, then item=q[front] then display item.
+
+REAR ELEMENT
+Step 1: Declare item to store rear element.
+Step 2: If it is EMPTY, then display “Empty Queue” and terminate the function.
+Step 3: If it is not EMPTY, then item=q[rear] then display item.

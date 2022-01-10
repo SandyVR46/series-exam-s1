@@ -1,0 +1,26 @@
+ALGORITHM
+Step 1 - Include all the header files which are used in the program and define a constant 		   'SIZE' with 	 specific value.
+Step 2 -  Declare all the functions used in stack implementation.
+Step 3 -  Create a one dimensional array with fixed size (int stack[SIZE])
+Step 4 -  Define a integer variable 'top' and initialize with '-1'. (int top = -1)
+Step 5 - In main method, display menu with list of operations and make suitable function 		   calls to perform operation selected by the user on the stack.
+PUSH 
+Step 1 -  Check whether stack is FULL. (top == SIZE-1)
+Step 2 - If it is FULL, then display "Stack is FULL!!! Insertion is not possible!!!" and 		   terminate the function.
+Step 3 - If it is NOT FULL, then increment top value by one (top++) and set stack[top] to 	   value (stack[top]= value).
+POP
+Step 1 - Check whether stack is EMPTY. (top == -1)
+Step 2 - If it is EMPTY, then display "Stack is EMPTY!!! Deletion is not possible!!!" and 	   terminate the function.
+Step 3 - If it is NOT EMPTY, then delete stack[top] and decrement top value by one (top--).
+
+DISPLAY
+
+Step 1 - Check whether stack is EMPTY. (top == -1)
+Step 2 - If it is EMPTY, then display "Stack is EMPTY!!!" and terminate the function.
+Step 3 - If it is NOT EMPTY, then define a variable 'i' and initialize with top. Display 		   stack[i] value and decrement i value by one (i--).
+Step 4 - Repeat above step until i value becomes '0'.
+
+DISPLAY TOP ELEMENT
+Step 1: Declare val to store top element
+Step 2: If it is EMPTY, then display “Stack is Empty” and terminate the function.
+Step 3: If it is not EMPTY, then val=stack[top] then display val.

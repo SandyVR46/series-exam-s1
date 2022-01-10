@@ -1,0 +1,24 @@
+Algorithm
+Input()
+Step1: Read size and elements of Set 1 and Set 2
+
+Union()
+Step1: for  i 1 to 9 do
+	step 1.1 : if(a[i]!=b[i])then set c[i]=1
+	step 1.2: else set c[i]=a[i]
+Step 2: end for
+Step 3: Display c
+
+Intersection()
+Step1: for  i 1 to 9 do
+	step 1.1 : if(a[i]==b[i])then set c[i]=a[i]
+	step 1.2: else set c[i]=0
+Step 2: end for
+Step 3: Display c
+
+Difference()
+Step1: for  i 1 to 9 do
+	step 1.1 : if(a[i]==1 && b[i]==0)then set c[i]=1
+	step 1.2: else set c[i]=0
+Step 2: end for
+Step 3: Display c

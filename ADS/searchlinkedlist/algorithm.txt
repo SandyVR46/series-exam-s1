@@ -1,0 +1,7 @@
+Algorithm to create a linear linked list and search whether a key is present or not
+
+	1. Input element to search from user. Store it in some variable say keyToSearch.
+	2. Declare two variable one to store index of found element and other to iterate through list. Say index = 0; and struct node *curNode = head;
+	3. If curNode is not NULL and its data is not equal to keyToSearch. Then, increment index and move curNode to its next node.
+	4. Repeat step 3 till curNode != NULL and element is not found, otherwise move to 5th step.
+	5.If curNode is not NULL, then element is found hence return index otherwise -1.
